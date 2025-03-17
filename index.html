@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Reem+Kufi:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container" style="direction: rtl; margin: 0 30px;">
+        <div class="main-titele" >
+            <h1 style="height: 100px; font-weight: 500; font-size: 120px;" id="name">القاهره</h1>
+            <h3 style="margin: 20px 70px;" id="readable"></h3>
+            <hr>
+        </div>
+        <div class="azan-time-main">
+            <div class="cards" style="margin: 70px 30px; margin-bottom: 70px; display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 30px 0;">
+                <div class="card">
+                    <div class="azan-titele" style="height: 30%; color: #faf5ff; background: linear-gradient(45deg, #6b21a8, #a855f7);">
+                        <h1 class="titele" style="margin: 0 10px;">الفجر</h1>
+                    </div>
+                    <div class="azan-time" style="height: 70%; background: #faf5ff; font-weight: 600; font-size: 40px; display: flex; align-items: center; justify-content: center;">
+                        <span id="fajr"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="azan-titele" style="height: 30%; color: #faf5ff; background: linear-gradient(45deg, #6b21a8, #a855f7);">
+                        <h1 class="titele" style="margin: 0 10px;">الشروق</h1>
+                    </div>
+                    <div class="azan-time" style="height: 70%; background: #faf5ff; font-weight: 600; font-size: 40px; display: flex; align-items: center; justify-content: center;">
+                        <span id="shorok"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="azan-titele" style="height: 30%; color: #faf5ff; background: linear-gradient(45deg, #6b21a8, #a855f7);">
+                        <h1 class="titele" style="margin: 0 10px;">الظهر</h1>
+                    </div>
+                    <div class="azan-time" style="height: 70%; background: #faf5ff; font-weight: 600; font-size: 40px; display: flex; align-items: center; justify-content: center;">
+                        <span id="duhr"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="azan-titele" style="height: 30%; color: #faf5ff; background: linear-gradient(45deg, #6b21a8, #a855f7);">
+                        <h1 class="titele" style="margin: 0 10px;">العصر</h1>
+                    </div>
+                    <div class="azan-time" style="height: 70%; background: #faf5ff; font-weight: 600; font-size: 40px; display: flex; align-items: center; justify-content: center;">
+                        <span id="asr"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="azan-titele" style="height: 30%; color: #faf5ff; background: linear-gradient(45deg, #6b21a8, #a855f7);">
+                        <h1 class="titele" style="margin: 0 10px;">المغرب</h1>
+                    </div>
+                    <div class="azan-time" style="height: 70%; background: #faf5ff; font-weight: 600; font-size: 40px; display: flex; align-items: center; justify-content: center;">
+                        <span id="maghreb"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="azan-titele" style="height: 30%; color: #faf5ff; background: linear-gradient(45deg, #6b21a8, #a855f7);">
+                        <h1 class="titele" style="margin: 0 10px;">العشاء</h1>
+                    </div>
+                    <div class="azan-time" style="height: 70%; background: #faf5ff; font-weight: 600; font-size: 40px; display: flex; align-items: center; justify-content: center;">
+                        <span id="esha"></span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="select-city">
+            <select name="" id="cities" style="width: 200px; height: 55px; font-size: 20px; color: #faf5ff; font-weight: 500; font-family: IBM Plex Sans Arabic, sans-serif; background: none; border: 3px solid #faf5ff; padding: 5px; border-radius: 10px; outline: none;">
+                
+            </select>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

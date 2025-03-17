@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 92vh;
+    width: 100%;
+    background: linear-gradient( to right, #7e22ce,#000000),url(1.webm) no-repeat center center fixed;
+    color: #f3e8ff;
+    /* font-family: "Aref Ruqaa", serif; */
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.card{
+    height: 200px;
+    width: 150px;
+    background: #f5f3ff;
+    color: #171717;
+    box-shadow: 0px 15px 10px rgb(0 0 0 / 30%);
+}
+.select-city{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+option{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
